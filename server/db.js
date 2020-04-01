@@ -1,4 +1,4 @@
-const mysql = require("mysql")
+const mysql = require("mysql2")
 const config = require("config")
 
 const db = mysql.createPool({
@@ -9,7 +9,8 @@ const db = mysql.createPool({
   // never do this on a actually project, learning purpose only (no password)
   user: config.get("db.user"),
   password: config.get("db.password"),
-  database: config.get("db.database")
+  database: config.get("db.database"),
+  port: config.get("db.port")
 })
 
 module.exports = db
