@@ -4,7 +4,7 @@ const router = express.Router()
 const connection = require("../db")
 //go get all of the player profiles
 router.get("/players", (req, res, next) => {
-  const sql = `SELECT * FROM players`
+  const sql = `SELECT * FROM players LIMIT 6`
   // err - errors connecting to the database
   // results- results that your asking for
   // fields - are all the fields that your looking for

@@ -4,7 +4,7 @@ const conn = require("../db")
 
 // Gets all categories from MySQL:
 router.get("/products", (req, res, next) => {
-  const sql = `SELECT * FROM products`
+  const sql = `SELECT * FROM products LIMIT 6`
 
   conn.query(sql, (err, results, fields) => {
     if (err) {
