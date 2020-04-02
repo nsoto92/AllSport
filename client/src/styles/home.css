@@ -161,7 +161,17 @@ header .site-title {
 .react-player {
   position: absolute;
   top: 0;
-  margin: 0px 56px;
+}
+
+.sale-btn {
+  position: absolute;
+  color: white;
+  background-color: rgb(226, 17, 17);
+  padding: 0.8rem 1.9rem;
+  border-radius: 4rem;
+  border: 1px solid border;
+  margin-top: -82px;
+  margin-left: -64px;
 }
 
 /* Third Slider */
