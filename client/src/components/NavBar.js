@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
+import { TiShoppingCart } from "react-icons/ti"
+import { FaSearch } from "react-icons/fa"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/home.css"
 
@@ -31,17 +33,17 @@ export default props => {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                PLACEHOLDER
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                FIND A STORE
+                PRO SHOP
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
                 ABOUT US
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                CONTACT US
               </a>
             </li>
           </ul>
@@ -59,10 +61,10 @@ export default props => {
         </nav>
         <div className="navbar-nav">
           <li className="nav-item  rounded-circle mx-2 search-icon">
-            <i className="fas fa-search p-2"></i>
+            <FaSearch />
           </li>
           <li className="nav-item  rounded-circle mx-2 basket-icon">
-            <i className="fas fa-shopping-basket p-2"></i>
+            <TiShoppingCart />
           </li>
         </div>
       </nav>
