@@ -1,7 +1,8 @@
 import React from "react"
 import { useProducts } from "../hooks"
 import { useItems } from "../hooks"
-
+import { Link } from "react-router-dom"
+import { FaStar } from "react-icons/fa"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/home.css"
 
@@ -20,20 +21,26 @@ export default props => {
         <div className="slider-three row text-center px-4">
           {products.map(product => (
             <div className="col-md-2 product pt-md-5">
-              <img src={product.image} className="img-fluid" alt="Image 1" />
+              <Link to="/products">
+                <img
+                  src={product.image}
+                  className="img-fluid homeProd"
+                  alt="Image 1"
+                />
+              </Link>
               <div className="cart-details">
                 <h6 className="pro-title p-0">{product.title}</h6>
                 <div className="rating">
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star-half-alt"></i>
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
                 </div>
                 <div className="pro-price py-2">
                   <h5>
                     <small>
-                      <s className="text-secondary">{product.price}</s>
+                      <span className="text-secondary">{product.price}</span>
                     </small>
                   </h5>
                 </div>

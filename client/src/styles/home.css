@@ -157,6 +157,11 @@ header .site-title {
   font-size: 0.9em;
 }
 
+.homeProd {
+  width: 400px;
+  height: 400px;
+  padding: 0 16px;
+}
 /* Sale Video */
 
 .player-wrapper {
