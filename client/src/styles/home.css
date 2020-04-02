@@ -125,8 +125,9 @@ header .site-title {
   padding: 0.8rem 1.9rem;
   border-radius: 4rem;
   border: 1px solid border;
-  background-color: white;
-  color: lightgray;
+  background-color: rgb(226, 17, 17);
+  color: white;
+  text-decoration: none;
 }
 
 .slider-two .slick-track .product:hover span {
@@ -137,6 +138,11 @@ header .site-title {
   border: 1px dotted border;
 }
 
+.homePros {
+  width: 300px;
+  height: 200px;
+  margin-top: 50px;
+}
 /* Features Sections */
 .container .features {
   padding: 3rem 0;

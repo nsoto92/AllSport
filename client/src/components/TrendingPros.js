@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import { usePlayers } from "../hooks"
 
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -17,10 +18,12 @@ export default props => {
         <div className="row slider-two text-center">
           {players.map(player => (
             <div className="col-md-2 product pt-md-5 pt-4">
-              <img src={player.img} alt="Product 1" />
-              <span className="border site-btn btn-span">
-                {player.firstname + " " + player.lastname}
-              </span>
+              <img className="homePros" src={player.img} alt="Product 1" />
+              <Link className="linkToShop" to="/players">
+                <span className="border site-btn btn-span">
+                  {player.firstname + " " + player.lastname}
+                </span>
+              </Link>
             </div>
           ))}
         </div>
