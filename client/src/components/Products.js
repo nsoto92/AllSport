@@ -15,7 +15,7 @@ export default props => {
         <div className="prodList">
           {products.map(product => (
             <div className="product" key={product.id}>
-              <img src={product.image} />
+              <img className="prodImg" src={product.image} />
               {product.title}
               <br />
               {product.price}
