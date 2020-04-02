@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import { TiShoppingCart } from "react-icons/ti"
 import { FaSearch } from "react-icons/fa"
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -22,29 +23,29 @@ export default props => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/">
                 HOME <span className="sr-only">(current)</span>
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/products">
                 SHOP
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                PRO SHOP
-              </a>
+              <Link className="nav-link" to="/players">
+                FIND A PRO
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/aboutUs">
                 ABOUT US
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/contactUs">
                 CONTACT US
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
