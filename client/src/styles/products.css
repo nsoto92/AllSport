@@ -23,7 +23,7 @@
   width: 1000px;
 }
 
-.product {
+.prod {
   display: grid;
   justify-content: center;
   text-align: center;
@@ -31,7 +31,6 @@
   position: relative;
   border: 1px solid transparent;
 }
-
 .prodCart {
   background-color: rgb(226, 17, 17);
   color: white;
@@ -40,11 +39,11 @@
   border: 1px solid border;
 }
 
-.product:hover {
+.prod:hover {
   border: 1px solid lightgray;
   cursor: pointer;
 }
-.product:hover > button.prodCart {
+.prod:hover > button.prodCart {
   background-color: black;
   cursor: pointer;
   transition: 0.2s;
