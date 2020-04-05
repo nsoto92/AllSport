@@ -1,5 +1,5 @@
 import React from "react"
-import { useProducts } from "../hooks"
+import { useFeatProducts } from "../hooks"
 import { useItems } from "../hooks"
 import { Link } from "react-router-dom"
 import { FaStar } from "react-icons/fa"
@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/home.css"
 
 export default props => {
-  const { products } = useProducts()
+  const { products } = useFeatProducts()
   const { add } = useItems()
   return (
     <div className="container-fluid">

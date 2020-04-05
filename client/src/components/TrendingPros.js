@@ -1,12 +1,12 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import { usePlayers } from "../hooks"
+import { useFeatPlayers } from "../hooks"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/home.css"
 
 export default props => {
-  const { players } = usePlayers()
+  const { players } = useFeatPlayers()
   return (
     <div className="container-fluid">
       <div className="container text-center">
