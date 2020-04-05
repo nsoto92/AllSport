@@ -2,6 +2,8 @@ import React from "react"
 import { useProducts } from "../hooks"
 import { useItems } from "../hooks"
 
+import { FaShoppingCart } from "react-icons/fa"
+
 import "../styles/products.css"
 
 console.log(useProducts)
@@ -12,16 +14,7 @@ export default props => {
   return (
     <div className="prodWrapper">
       <div className="orderSelect">
-        <p> Product(s) found.</p>
-        <div>
-          <label htmlFor="orderBy">Order by </label>
-
-          <select id="orderBy">
-            <option value="select">Select</option>
-            <option value="LowestToHighest">Lowest To highest</option>
-            <option value="HighestToLowest">Highest To lowest</option>
-          </select>
-        </div>
+        <p> {products.length} Product(s) found.</p>
       </div>
 
       <div>
@@ -31,8 +24,7 @@ export default props => {
               <div className="prod" key={product.id}>
                 <img className="prodImg" src={product.image} />
                 {product.title}
-                <br />
-                {product.price}
+                <br />${product.price}
                 <br />
                 <button onClick={e => add(product)} className="prodCart">
                   Add to cart

@@ -48,3 +48,37 @@
   cursor: pointer;
   transition: 0.2s;
 }
+
+/* Cart */
+#cartItems {
+  position: fixed;
+  width: 40vw;
+  top: 0;
+  height: 100vh;
+  margin-left: 60%;
+  background: white;
+  z-index: 5;
+}
+
+.closeX {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: -50px;
+  background: white;
+  cursor: pointer;
+}
+
+.closed {
+  display: none;
+}
+
+.cartSvg {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: white;
+  cursor: pointer;
+}

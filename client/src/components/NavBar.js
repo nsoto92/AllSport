@@ -1,11 +1,16 @@
 import React from "react"
+import { useItems } from "../hooks"
+import { useProducts } from "../hooks"
 import { Link } from "react-router-dom"
 import { TiShoppingCart } from "react-icons/ti"
 import { FaSearch } from "react-icons/fa"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/home.css"
+import "../styles/products.css"
 
 export default props => {
+  const { products } = useProducts()
+  const { toggle, status, cart } = useItems()
   return (
     <div className="container-fluid p-0">
       <nav className="navbar navbar-expand-lg navbar-light bg-white">
@@ -65,7 +70,15 @@ export default props => {
             <FaSearch />
           </li>
           <li className="nav-item  rounded-circle mx-2 basket-icon">
-            <TiShoppingCart />
+            <TiShoppingCart
+              id='className={status ? "cartItems" : "cartItems closed"}'
+              onClick={toggle}
+              className={
+                status
+                  ? "nav-item  rounded-circle mx-2 basket-icon closed"
+                  : "nav-item  rounded-circle mx-2 basket-icon"
+              }
+            />
           </li>
         </div>
       </nav>
