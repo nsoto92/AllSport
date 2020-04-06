@@ -13,7 +13,7 @@ export default (props) => {
             <Link to="/products">
               <img
                 className="d-block w-100"
-                src="./assets/item-1.png"
+                src="./assets/item1.png"
                 alt="First slide"
               />
             </Link>
@@ -22,8 +22,8 @@ export default (props) => {
             <Link to="/products">
               <img
                 className="d-block w-100"
-                src="./assets/nikeTrack.png"
-                alt="Third slide"
+                src="./assets/nike-cleats.png"
+                alt="Second slide"
               />
             </Link>
           </Carousel.Item>
