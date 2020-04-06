@@ -5,11 +5,10 @@ import Featured from "./Featured"
 import SaleVideo from "./SaleVideo"
 import Lastest from "./Lastest"
 import SportsLogos from "./SportsLogos"
-import Footer from "./Footer"
 import "../styles/home.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 
-export default props => {
+export default (props) => {
   return (
     <div>
       <SliderOne />
@@ -18,7 +17,6 @@ export default props => {
       <SaleVideo />
       <Lastest />
       <SportsLogos />
-      <Footer />
     </div>
   )
 }

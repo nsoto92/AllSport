@@ -4,12 +4,12 @@ import { Link } from "react-router-dom"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/home.css"
 
-export default props => {
+export default (props) => {
   return (
     <div className="container-fluid">
       <div className="container text-center">
         <div className="features">
-          <h1>YOU CAN HAVE IT ALL</h1>
+          <h1 className="saleHeader">SUPER SALE: YOU CAN HAVE IT ALL</h1>
         </div>
       </div>
 
@@ -29,7 +29,7 @@ export default props => {
       <div className="container-fluid">
         <div className="saleButton text-center">
           <Link className="linkToShop" to="/products">
-            <button className="sale-btn">Explore</button>
+            <button className="sale-btn">EXPLORE</button>
           </Link>
         </div>
       </div>
