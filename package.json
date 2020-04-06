@@ -19,7 +19,9 @@
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@fortawesome/react-fontawesome": "^0.1.9",
     "concurrently": "^5.1.0",
-    "react-bootstrap": "^1.0.0"
+    "react-bootstrap": "^1.0.0",
+    "react-slick": "^0.25.2",
+    "slick-carousel": "^1.8.1"
   },
   "boilerplate": {
     "name": "boilerplate",

@@ -1,9 +1,9 @@
 import React from "react"
-
+import { Link } from "react-router-dom"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/home.css"
 
-export default props => {
+export default (props) => {
   return (
     <header>
       <div className="container">
@@ -26,7 +26,9 @@ export default props => {
             </div>
           </div>
           <div className="col-md-4 col-12 text-center">
-            <h2 className="my-md-3 site-title text-white">All Sports</h2>
+            <Link className="nav-link" to="/">
+              <h2 className="my-md-3 site-title text-white">All Sports</h2>
+            </Link>
           </div>
 
           <div className="col-md-4 col-12 text-right">

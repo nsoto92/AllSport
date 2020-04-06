@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import "../styles/home.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 
-export default props => {
+export default (props) => {
   return (
     <div className="container-fluid p-0">
       <div className="site-slider">
@@ -22,7 +22,7 @@ export default props => {
             <Link to="/products">
               <img
                 className="d-block w-100"
-                src="./assets/item-2.png"
+                src="./assets/nikeTrack.png"
                 alt="Third slide"
               />
             </Link>
