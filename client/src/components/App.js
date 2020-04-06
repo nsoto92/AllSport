@@ -10,7 +10,7 @@ import ContactUs from "./ContactUs"
 import "../styles/home.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 
-export default props => {
+export default (props) => {
   return (
     <Router>
       <div>
