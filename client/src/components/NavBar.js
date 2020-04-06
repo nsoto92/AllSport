@@ -8,6 +8,7 @@ import FormControl from "react-bootstrap/FormControl"
 import { Link } from "react-router-dom"
 import { TiShoppingCart } from "react-icons/ti"
 import { FaSearch } from "react-icons/fa"
+
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/home.css"
 import "../styles/products.css"

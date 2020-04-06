@@ -1,3 +1,5 @@
+// Coded by Norbert M. Soto (https://github.com/nsoto92)
+
 // 1. imports
 import axios from "axios"
 import { useDispatch, useSelector } from "react-redux"
