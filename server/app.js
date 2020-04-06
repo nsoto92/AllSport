@@ -1,3 +1,5 @@
+// Coded by Norbert M. Soto (https://github.com/nsoto92)
+
 const express = require("express")
 const productRoutes = require("./routes/products")
 const athleteRoutes = require("./routes/athletes")

@@ -157,3 +157,7 @@ a {
 a:hover {
   color: black;
 }
+
+.cartB {
+  display: hidden;
+}

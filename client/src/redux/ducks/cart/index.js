@@ -1,3 +1,5 @@
+// Coded by Norbert M. Soto (https://github.com/nsoto92)
+
 import { useEffect, useState } from "react"
 import { useSelector, useDispatch } from "react-redux"
 

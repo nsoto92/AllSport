@@ -82,3 +82,13 @@
   background: white;
   cursor: pointer;
 }
+
+.buyItems {
+  height: 60vh;
+  overflow: scroll;
+}
+
+.cartAS {
+  height: 60vh;
+  overflow: scroll;
+}

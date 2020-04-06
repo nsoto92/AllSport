@@ -1,3 +1,5 @@
+// Coded by Norbert M. Soto (https://github.com/nsoto92)
+
 const mysql = require("mysql2")
 const config = require("config")
 

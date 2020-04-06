@@ -11,7 +11,7 @@ export default class MultipleItems extends Component {
       speed: 1000,
       slidesToShow: 12,
       slidesToScroll: 12,
-      arrows: true,
+      arrows: true
     }
     return (
       <div className="container-fluid">
