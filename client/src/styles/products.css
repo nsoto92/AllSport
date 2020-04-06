@@ -50,7 +50,7 @@
 }
 
 /* Cart */
-#cartItems {
+.cartItems {
   position: fixed;
   width: 40vw;
   top: 0;

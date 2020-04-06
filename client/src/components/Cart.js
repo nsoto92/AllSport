@@ -12,7 +12,7 @@ export default function(e) {
   const { cart, status, toggle, total, del } = useItems()
 
   return (
-    <div id={status ? "cartItems" : "cartItems closed"}>
+    <div className={status ? "cartItems" : "cartItems closed"}>
       <FaTimes
         onClick={toggle}
         className={
