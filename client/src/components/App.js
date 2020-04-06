@@ -25,7 +25,7 @@ export default props => {
         <Route path="/aboutUs" component={AboutUs}></Route>
         <Route path="/contactUs" component={ContactUs}></Route>
         <Route path="/checkout" component={Checkout}></Route>
-        <Route path="/" component={Cart}></Route>
+        <Cart />
         <Footer />
       </div>
     </Router>
