@@ -1,3 +1,6 @@
+// Coded by Norbert M. Soto (https://github.com/nsoto92)
+// Coded by Justin Burrows (https://github.com/JustinBurrowsDev)
+
 const express = require("express")
 const productRoutes = require("./routes/products")
 const athleteRoutes = require("./routes/athletes")

@@ -1,9 +1,12 @@
+// Coded by Justin Burrows (https://github.com/JustinBurrowsDev)
+
 import React from "react"
 import { Link } from "react-router-dom"
 import { usePlayers } from "../hooks"
 import styles from "../styles/findPros.css"
+import { ScrollBox, ScrollAxes, FastTrack } from "react-scroll-box"
 
-export default props => {
+export default (props) => {
   const { players } = usePlayers()
   return (
     <div className="container-fluid">
@@ -13,25 +16,17 @@ export default props => {
         </div>
       </div>
 
-      {players.map(player => (
-        <div>
-          <ul className="list">
-            <li className="listItem">
-              <div>
-                <img className="findPros" src={player.img} alt="Product 1" />
-              </div>
-              <Link className="linkToShop" to="/players">
-                <div>
-                  <span className="playerNames">
-                    {player.firstname + " " + player.lastname + " | "}
-                  </span>
-                </div>
-              </Link>
-              <div className="playerDescriptionContainer">
-                <p className="playerDescription">{player.description}</p>
-              </div>
-            </li>
-          </ul>
+      {players.map((player) => (
+        <div className="playerList">
+          <div>
+            <img className="findPros" src={player.img} alt="Product 1" />
+          </div>
+          <div className="playerName">
+            <p>{player.firstname + " " + player.lastname}</p>
+          </div>
+          <div className="playerDescriptionContainer">
+            <p className="playerDescription">{player.description}</p>
+          </div>
         </div>
       ))}
     </div>

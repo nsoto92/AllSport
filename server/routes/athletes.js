@@ -1,3 +1,5 @@
+// Coded by Justin Burrows (https://github.com/JustinBurrowsDev)
+
 const express = require("express")
 const router = express.Router()
 //connection to the database file
