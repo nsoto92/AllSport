@@ -23,7 +23,7 @@ export default (props) => {
         <Route exact path="/" component={Home}></Route>
         <Route path="/products" component={Products}></Route>
         <Route path="/players" component={Players}></Route>
-        <Route exact path="/playerprofiles" component={PlayerProfiles} />
+        <Route path="/playerProfiles" component={PlayerProfiles}></Route>
         <Route path="/aboutUs" component={AboutUs}></Route>
         <Route path="/contactUs" component={ContactUs}></Route>
         <Route path="/checkout" component={Checkout}></Route>
