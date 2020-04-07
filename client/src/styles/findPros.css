@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Anton|Gugi|Lato|Roboto|Sofia&display=swap");
-li {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
+
 .findPros {
   width: 70px;
   height: 70px;
@@ -12,27 +8,34 @@ li {
   margin: 10px;
 }
 
-.list {
-  border: 1px solid #ccc;
-  list-style-type: none;
-}
-
-span.playerNames {
+.playerList {
   display: flex;
-  flex-direction: row;
-  font-family: Gugi;
-  font-size: 0.9em;
-  color: black;
-  padding-top: 35px;
-  padding-right: 15px;
-  padding-left: 25px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
 .playerDescriptionContainer {
+  padding-top: 20px;
+  margin-left: 150px;
+}
+
+.playerName {
+  padding-top: 30px;
+  margin-left: 10px;
+  width: 200px;
+}
+
+.playerSport {
   padding-top: 25px;
-  padding-left: 10px;
-  padding-right: 10px;
-  width: 70%;
-  text-align: left;
-  font-size: 0.5em;
+  margin-left: 10px;
+}
+
+.playerBox {
+  height: 500px;
+  overflow: scroll;
+}
+
+p {
+  color: black;
 }

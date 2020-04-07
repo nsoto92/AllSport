@@ -1,4 +1,5 @@
 // Coded by Norbert M. Soto (https://github.com/nsoto92)
+// Coded by Justin Burrows (https://github.com/JustinBurrowsDev)
 
 import React from "react"
 import { useProducts } from "../hooks"
@@ -9,7 +10,7 @@ import { FaShoppingCart } from "react-icons/fa"
 import "../styles/products.css"
 
 console.log(useProducts)
-export default props => {
+export default (props) => {
   const { products } = useProducts()
   const { add } = useItems()
 
@@ -22,13 +23,13 @@ export default props => {
       <div>
         <div>
           <div className="prodList">
-            {products.map(product => (
+            {products.map((product) => (
               <div className="prod" key={product.id}>
                 <img className="prodImg" src={product.image} />
                 {product.title}
                 <br />${product.price}
                 <br />
-                <button onClick={e => add(product)} className="prodCart">
+                <button onClick={(e) => add(product)} className="prodCart">
                   Add to cart
                 </button>
               </div>

@@ -1,9 +1,11 @@
+// Coded by Justin Burrows (https://github.com/JustinBurrowsDev)
+
 import React from "react"
 import { Link } from "react-router-dom"
 import { usePlayers } from "../hooks"
 import styles from "../styles/findPros.css"
 
-export default props => {
+export default (props) => {
   const { players } = usePlayers()
   return (
     <div className="container-fluid">
@@ -12,28 +14,28 @@ export default props => {
           <h1>Find A Pro</h1>
         </div>
       </div>
+      <div className="playerBox">
+        {players.map((player) => (
+          <div className="playerList">
+            <div>
+              <img className="findPros" src={player.img} alt="Product 1" />
+            </div>
 
-      {players.map(player => (
-        <div>
-          <ul className="list">
-            <li className="listItem">
-              <div>
-                <img className="findPros" src={player.img} alt="Product 1" />
-              </div>
-              <Link className="linkToShop" to="/players">
-                <div>
-                  <span className="playerNames">
-                    {player.firstname + " " + player.lastname + " | "}
-                  </span>
-                </div>
+            <div className="playerName">
+              <Link to={"/playerprofiles"}>
+                <p>{player.firstname + " " + player.lastname}</p>
               </Link>
-              <div className="playerDescriptionContainer">
-                <p className="playerDescription">{player.description}</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      ))}
+            </div>
+            <div className="playerSport">
+              <p>{" Sport: " + player.sport + " " + " Team: " + player.team}</p>
+            </div>
+
+            <div className="playerDescriptionContainer">
+              <p className="playerDescription">{player.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }

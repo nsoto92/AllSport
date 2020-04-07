@@ -1,4 +1,5 @@
 // Coded by Norbert M. Soto (https://github.com/nsoto92)
+// Coded by Justin Burrows (https://github.com/JustinBurrowsDev)
 
 const mysql = require("mysql2")
 const config = require("config")
@@ -12,7 +13,7 @@ const db = mysql.createPool({
   user: config.get("db.user"),
   password: config.get("db.password"),
   database: config.get("db.database"),
-  port: config.get("db.port")
+  port: config.get("db.port"),
 })
 
 module.exports = db

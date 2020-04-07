@@ -1,4 +1,5 @@
 // Coded by Norbert M. Soto (https://github.com/nsoto92)
+// Coded by Justin Burrows (https://github.com/JustinBurrowsDev)
 
 // 1. imports
 import axios from "axios"
@@ -24,8 +25,8 @@ export default (state = initialState, action) => {
 
 // 5. action creators
 export function getProducts() {
-  return dispatch => {
-    axios.get("/api/products").then(resp => {
+  return (dispatch) => {
+    axios.get("/api/products").then((resp) => {
       console.log(resp.data)
       dispatch({ type: GET, payload: resp.data })
     })
@@ -35,7 +36,7 @@ export function getProducts() {
 // 6. custom hook
 export function useProducts() {
   const dispatch = useDispatch()
-  const products = useSelector(appState => appState.productState.products)
+  const products = useSelector((appState) => appState.productState.products)
   const get = () => dispatch(getProducts())
 
   useEffect(() => {
