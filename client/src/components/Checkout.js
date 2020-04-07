@@ -1,6 +1,7 @@
 import React from "react"
 
 import { useItems } from "../hooks"
+import "../styles/products.css"
 
 export default props => {
   const { cart, total } = useItems()
@@ -11,9 +12,11 @@ export default props => {
       <h1>Thank you for shopping with AllSports!</h1>
       <div className="receiptSummary">
         {cart.map((product, i) => (
-          <div className="receiptProducts" key={"receipt-product-" + i}>
-            <img className="receiptProductImg" alt="" src={product.image} />
-            <p className="receiptProductTitle">{product.title}</p>
+          <div className="listedProd" key={product.id}>
+            <div className="prodDetails">
+              {product.title}
+              <br />${product.price}
+            </div>
           </div>
         ))}
       </div>
