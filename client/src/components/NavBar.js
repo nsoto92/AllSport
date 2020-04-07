@@ -35,24 +35,17 @@ export default (props) => {
             <Nav.Link href="/contactUs">CONTACT US</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <Form inline>
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-        </Form>
-        <div className="navbar-nav">
-          <li className="nav-item  rounded-circle mx-2 search-icon">
-            <FaSearch />
-          </li>
-          <li className="nav-item  rounded-circle mx-2 basket-icon">
-            <TiShoppingCart
-              id='className={status ? "cartItems" : "cartItems closed"}'
-              onClick={toggle}
-              className={
-                status
-                  ? "nav-item  rounded-circle mx-2 basket-icon closed"
-                  : "nav-item  rounded-circle mx-2 basket-icon"
-              }
-            />
-          </li>
+        <div>
+          <TiShoppingCart
+            className="nav-item  mx-2 basket-icon"
+            id='className={status ? "cartItems" : "cartItems closed"}'
+            onClick={toggle}
+            className={
+              status
+                ? "nav-item  rounded-circle mx-2 basket-icon closed"
+                : "nav-item  rounded-circle mx-2 basket-icon"
+            }
+          />
         </div>
       </Navbar>
     </div>
