@@ -45,7 +45,10 @@ export default props => {
                   </h5>
                 </div>
                 <div className="cart mt-4">
-                  <button className="border site-btn btn-span">
+                  <button
+                    onClick={e => add(product)}
+                    className="border site-btn btn-span"
+                  >
                     Add to Cart
                   </button>
                 </div>

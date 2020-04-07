@@ -9,7 +9,7 @@ import "../styles/products.css"
 import { FaTimes } from "react-icons/fa"
 
 export default function(e) {
-  const { cart, status, toggle, total, del } = useItems()
+  const { cart, status, toggle, total, del, add, del1 } = useItems()
 
   return (
     <div className={status ? "cartItems" : "cartItems closed"}>
@@ -34,20 +34,33 @@ export default function(e) {
               <img className="prodImgCart" src={product.image} />
               <div className="prodDetails">
                 {product.title}
-                <br />${product.price}
                 <br />
+                {product.price}
+                <br />
+                <p>
+                  <button
+                    className="augmenters"
+                    onClick={e => del1(product.productId)}
+                  >
+                    &lsaquo;
+                  </button>
+                  {product.quantity}
+                  <button className="augmenters" onClick={e => add(product)}>
+                    &rsaquo;
+                  </button>
+                </p>
                 <button onClick={e => del(product)} className="prodCart">
-                  Remove
+                  Remove All
                 </button>
               </div>
             </div>
           ))}
         </div>
       </div>
-      <div>
+      <div className="cartTotals">
         <h3> Total: ${total}</h3>
         <Link to="/checkout">
-          <p className="receiptLink">CHECKOUT</p>
+          <button className="receiptLink">Place My Order</button>
         </Link>
       </div>
     </div>
