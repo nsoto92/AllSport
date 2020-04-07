@@ -1,3 +1,5 @@
+// Coded by Norbert M. Soto (https://github.com/nsoto92)
+
 import React from "react"
 
 import { useItems } from "../hooks"

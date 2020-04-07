@@ -9,7 +9,7 @@ import "../styles/products.css"
 import { FaTimes } from "react-icons/fa"
 
 export default function(e) {
-  const { cart, status, toggle, total, del } = useItems()
+  const { cart, status, toggle, total, del, add, del1 } = useItems()
 
   return (
     <div className={status ? "cartItems" : "cartItems closed"}>
@@ -34,7 +34,12 @@ export default function(e) {
               <img className="prodImgCart" src={product.image} />
               <div className="prodDetails">
                 {product.title}
-                <br />${product.price}
+                <br />
+                {product.price}
+                <br />
+                <button onClick={e => del1(product.productId)}>&lsaquo;</button>
+                {product.quantity}{" "}
+                <button onClick={e => add(product)}>&rsaquo;</button>
                 <br />
                 <button onClick={e => del(product)} className="prodCart">
                   Remove
