@@ -13,26 +13,26 @@ export default (props) => {
         </div>
       </div>
 
-      <div className="player-wrapper">
+      <div className="player-wrapper center">
         <ReactPlayer
           url="https://youtu.be/p3WFMrG91FcU"
           playing
           className="react-player"
           playing
-          width="100%"
-          height="100%"
+          width="90%"
+          height="80%"
         />
       </div>
 
       <br />
 
-      <div className="container-fluid">
+      {/* <div className="container-fluid">
         <div className="saleButton text-center">
           <Link className="linkToShop" to="/products">
             <button className="sale-btn">EXPLORE</button>
           </Link>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
