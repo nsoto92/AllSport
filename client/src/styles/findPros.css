@@ -17,11 +17,25 @@
 
 .playerDescriptionContainer {
   padding-top: 20px;
-  margin-left: 20px;
+  margin-left: 150px;
 }
 
 .playerName {
   padding-top: 30px;
   margin-left: 10px;
   width: 200px;
+}
+
+.playerSport {
+  padding-top: 25px;
+  margin-left: 10px;
+}
+
+.playerBox {
+  height: 500px;
+  overflow: scroll;
+}
+
+p {
+  color: black;
 }
