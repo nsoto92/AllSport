@@ -37,22 +37,30 @@ export default function(e) {
                 <br />
                 {product.price}
                 <br />
-                <button onClick={e => del1(product.productId)}>&lsaquo;</button>
-                {product.quantity}{" "}
-                <button onClick={e => add(product)}>&rsaquo;</button>
-                <br />
+                <p>
+                  <button
+                    className="augmenters"
+                    onClick={e => del1(product.productId)}
+                  >
+                    &lsaquo;
+                  </button>
+                  {product.quantity}
+                  <button className="augmenters" onClick={e => add(product)}>
+                    &rsaquo;
+                  </button>
+                </p>
                 <button onClick={e => del(product)} className="prodCart">
-                  Remove
+                  Remove All
                 </button>
               </div>
             </div>
           ))}
         </div>
       </div>
-      <div>
+      <div className="cartTotals">
         <h3> Total: ${total}</h3>
         <Link to="/checkout">
-          <p className="receiptLink">CHECKOUT</p>
+          <button className="receiptLink">Place My Order</button>
         </Link>
       </div>
     </div>
