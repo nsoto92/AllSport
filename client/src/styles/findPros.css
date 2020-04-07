@@ -1,29 +1,51 @@
 @import url("https://fonts.googleapis.com/css?family=Anton|Gugi|Lato|Roboto|Sofia&display=swap");
 
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+/* tablets */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* smartphones */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
 .findPros {
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   margin-top: 20px;
   margin: 10px;
 }
 
 .playerList {
-  display: flex;
+  display: grid;
   border: 1px solid #ccc;
   border-radius: 10px;
-  margin-top: 10px;
+  height: 450px;
+  width: 300px;
+  margin: auto;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .playerDescriptionContainer {
   padding-top: 20px;
-  margin-left: 150px;
 }
 
 .playerName {
+  font-family: Gugi;
+  font-size: 2em;
   padding-top: 30px;
-  margin-left: 10px;
-  width: 200px;
 }
 
 .playerSport {
@@ -31,11 +53,11 @@
   margin-left: 10px;
 }
 
-.playerBox {
-  height: 500px;
-  overflow: scroll;
-}
-
 p {
   color: black;
+}
+
+.flipbutton {
+  width: 70%;
+  margin: auto;
 }

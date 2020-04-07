@@ -5,6 +5,7 @@ import Navbar from "./NavBar"
 import Home from "./Home"
 import Products from "./Products"
 import Players from "./Players"
+import PlayerProfiles from "./PlayerProfiles"
 import AboutUs from "./AboutUs"
 import ContactUs from "./ContactUs"
 import Cart from "./Cart"
@@ -13,7 +14,7 @@ import Checkout from "./Checkout"
 import "../styles/home.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 
-export default props => {
+export default (props) => {
   return (
     <Router>
       <div>
@@ -22,6 +23,7 @@ export default props => {
         <Route exact path="/" component={Home}></Route>
         <Route path="/products" component={Products}></Route>
         <Route path="/players" component={Players}></Route>
+        <Route exact path="/playerprofiles" component={PlayerProfiles} />
         <Route path="/aboutUs" component={AboutUs}></Route>
         <Route path="/contactUs" component={ContactUs}></Route>
         <Route path="/checkout" component={Checkout}></Route>

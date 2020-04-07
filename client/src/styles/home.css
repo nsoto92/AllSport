@@ -125,23 +125,26 @@ header .site-title {
 /* Latest and Greatest */
 
 .nikeZoom {
-  margin-left: 30%;
+  width: 100%;
 }
 
 /* Footer */
 
 footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-top: 20px;
   color: white;
   font-size: 20px;
   background-color: rgb(226, 17, 17);
   text-decoration: none;
 }
 .list {
-  width: 700px;
+  margin: auto;
+
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
-  margin-left: 30%;
+
   list-style-type: none;
 }
 
