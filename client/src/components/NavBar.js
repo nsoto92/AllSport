@@ -9,7 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/home.css"
 import "../styles/products.css"
 
-export default props => {
+export default (props) => {
   const { products } = useProducts()
   const { toggle, status, cart } = useItems()
   return (
@@ -31,20 +31,17 @@ export default props => {
             <Nav.Link href="/contactUs">CONTACT US</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-
-
-        <div className="navbar-nav">
-          <li className="nav-item  rounded-circle mx-2 basket-icon">
-            <TiShoppingCart
-              id='className={status ? "cartItems" : "cartItems closed"}'
-              onClick={toggle}
-              className={
-                status
-                  ? "nav-item  rounded-circle mx-2 basket-icon closed"
-                  : "nav-item  rounded-circle mx-2 basket-icon"
-              }
-            />
-          </li>
+        <div>
+          <TiShoppingCart
+            className="nav-item  mx-2 basket-icon"
+            id='className={status ? "cartItems" : "cartItems closed"}'
+            onClick={toggle}
+            className={
+              status
+                ? "nav-item  rounded-circle mx-2 basket-icon closed"
+                : "nav-item  rounded-circle mx-2 basket-icon"
+            }
+          />
         </div>
       </Navbar>
     </div>
