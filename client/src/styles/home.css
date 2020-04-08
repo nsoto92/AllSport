@@ -26,7 +26,7 @@ header .site-title {
 /*  Navigation Menu **/
 
 .navbar-nav {
-  padding: 0.8em 0em;
+  margin-right: 40px;
 }
 
 .navbar-nav .nav-link {
@@ -39,7 +39,9 @@ header .site-title {
 }
 
 .navbar-nav .basket-icon {
-  margin-right: 6.5rem;
+  color: black;
+  position: fixed;
+  top: 108px;
 }
 
 /* Slider one */
