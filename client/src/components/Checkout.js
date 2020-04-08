@@ -22,8 +22,8 @@ export default props => {
         ))}
       </div>
       <div className="checkoutTotal">
-        <h3>Total: {total}</h3>
-        <Link href="/contactUs">
+        <h3>Total: ${total}</h3>
+        <Link to="/contactUs">
           <h3>Questions/Concerns about your order?</h3>
         </Link>
       </div>

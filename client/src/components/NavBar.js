@@ -13,7 +13,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/home.css"
 import "../styles/products.css"
 
-export default (props) => {
+export default props => {
   const { products } = useProducts()
   const { toggle, status, cart } = useItems()
   return (
@@ -35,13 +35,8 @@ export default (props) => {
             <Nav.Link href="/contactUs">CONTACT US</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <Form inline>
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-        </Form>
+
         <div className="navbar-nav">
-          <li className="nav-item  rounded-circle mx-2 search-icon">
-            <FaSearch />
-          </li>
           <li className="nav-item  rounded-circle mx-2 basket-icon">
             <TiShoppingCart
               id='className={status ? "cartItems" : "cartItems closed"}'
