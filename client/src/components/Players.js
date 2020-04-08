@@ -1,39 +1,27 @@
-import React from "react"
+// Coded by Justin Burrows (https://github.com/JustinBurrowsDev)
+import React, { useState } from "react"
+import ReactDOM from "react-dom"
+import ReactCardFlip from "react-card-flip"
 import { Link } from "react-router-dom"
+import Card from "./Card.js"
+
 import { usePlayers } from "../hooks"
 import styles from "../styles/findPros.css"
 
-export default props => {
+export default (props) => {
+  const [message, setMessage] = useState("")
   const { players } = usePlayers()
-  return (
-    <div className="container-fluid">
-      <div className="container text-center">
-        <div className="features">
-          <h1>Find A Pro</h1>
-        </div>
-      </div>
 
-      {players.map(player => (
-        <div>
-          <ul className="list">
-            <li className="listItem">
-              <div>
-                <img className="findPros" src={player.img} alt="Product 1" />
-              </div>
-              <Link className="linkToShop" to="/players">
-                <div>
-                  <span className="playerNames">
-                    {player.firstname + " " + player.lastname + " | "}
-                  </span>
-                </div>
-              </Link>
-              <div className="playerDescriptionContainer">
-                <p className="playerDescription">{player.description}</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      ))}
+  return (
+    <div>
+      <div className="title">
+        <h1>PLAYER CARDS</h1>
+      </div>
+      <div className="cards">
+        {players.map((player) => (
+          <Card player={player} />
+        ))}
+      </div>
     </div>
   )
 }

@@ -11,12 +11,14 @@ export default (props) => {
           <h1>Latest and Greatest</h1>
         </div>
       </div>
-      <div className="row">
-        <img
-          src="./assets/nikeZoom.png"
-          className="img-fluid nikeZoom"
-          alt="Banner 1"
-        />
+      <div>
+        <div className="col-md-8 col-12">
+          <img
+            src="./assets/nikeZoom.png"
+            className="img-fluid nikeZoom"
+            alt="Banner 1"
+          />
+        </div>
       </div>
     </div>
   )

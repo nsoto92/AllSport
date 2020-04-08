@@ -30,11 +30,12 @@ export default props => {
           <Nav className="mr-auto">
             <Nav.Link href="/">HOME</Nav.Link>
             <Nav.Link href="/products">SHOP</Nav.Link>
-            <Nav.Link href="/players">FIND A PRO</Nav.Link>
+            <Nav.Link href="/players">LEARN A PRO</Nav.Link>
             <Nav.Link href="/aboutUs">ABOUT US</Nav.Link>
             <Nav.Link href="/contactUs">CONTACT US</Nav.Link>
           </Nav>
         </Navbar.Collapse>
+
 
         <div className="navbar-nav">
           <li className="nav-item  rounded-circle mx-2 basket-icon">

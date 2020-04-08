@@ -1,38 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Anton|Gugi|Lato|Roboto|Sofia&display=swap");
-li {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+/* tablets */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* smartphones */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
 .findPros {
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   margin-top: 20px;
   margin: 10px;
 }
 
-.list {
-  border: 1px solid #ccc;
-  list-style-type: none;
+.title {
+  text-align: center;
+  padding-bottom: 40px;
+  font-family: Lato;
 }
 
-span.playerNames {
-  display: flex;
-  flex-direction: row;
-  font-family: Gugi;
-  font-size: 0.9em;
-  color: black;
-  padding-top: 35px;
-  padding-right: 15px;
-  padding-left: 25px;
+.playerList {
+  display: grid;
+  border: 5px solid #ccc;
+  border-radius: 10px;
+  height: 450px;
+  width: 300px;
+  margin: auto;
+  margin-bottom: 10px;
+  text-align: center;
+  background-image: url("https://user-images.githubusercontent.com/58059462/78826972-384fd500-7997-11ea-9582-8cb916a7f1c8.jpg");
+
+  box-shadow: 10px 10px 53px 1px rgba(0, 0, 0, 0.71);
 }
 
 .playerDescriptionContainer {
+  padding: 20px;
+}
+
+.playerName {
+  font-size: 2em;
+  padding: 30px;
+}
+
+.playerSport {
   padding-top: 25px;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin-left: 10px;
+  margin: auto;
+  font-size: 1.5em;
+}
+
+.playerList p {
+  color: white;
+  font-family: Lato;
+  margin: auto;
+  text-align: center;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+
+.flipbutton {
   width: 70%;
-  text-align: left;
-  font-size: 0.5em;
+  margin: auto;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+}
+
+.flipbutton:focus {
+  outline: none;
 }
