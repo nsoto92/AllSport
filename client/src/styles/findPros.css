@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Anton|Gugi|Lato|Roboto|Sofia&display=swap");
 
 .cards {
@@ -42,7 +43,8 @@
   margin: auto;
   margin-bottom: 10px;
   text-align: center;
-  background-color: red;
+  background-image: url("https://user-images.githubusercontent.com/58059462/78826972-384fd500-7997-11ea-9582-8cb916a7f1c8.jpg");
+
   box-shadow: 10px 10px 53px 1px rgba(0, 0, 0, 0.71);
 }
 
@@ -51,7 +53,6 @@
 }
 
 .playerName {
-  font-family: Gugi;
   font-size: 2em;
   padding: 30px;
 }
@@ -66,7 +67,6 @@
 .playerList p {
   color: white;
   font-family: Lato;
-  background-color: black;
   margin: auto;
   text-align: center;
   opacity: 0.9;
