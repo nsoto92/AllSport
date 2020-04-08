@@ -35,6 +35,10 @@ export default props => {
             <Nav.Link href="/contactUs">CONTACT US</Nav.Link>
           </Nav>
         </Navbar.Collapse>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2f3192905012bb4d27a776a31e8af4872a6a810a
 
         <div className="navbar-nav">
           <li className="nav-item  rounded-circle mx-2 basket-icon">
