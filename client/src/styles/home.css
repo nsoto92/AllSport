@@ -127,9 +127,24 @@ header .site-title {
 }
 
 /* Latest and Greatest */
+.latest {
+  width: 1440px;
+  margin: auto;
+}
 
 .nikeZoom {
-  width: 100%;
+  width: 80%;
+  margin-left: 10%;
+}
+
+/* sports logo */
+
+.slick-next:before {
+  color: black !important;
+}
+
+.slick-prev:before {
+  color: black !important;
 }
 
 .col-md-8 {
@@ -150,10 +165,8 @@ footer {
 }
 .list {
   margin: auto;
-
   display: flex;
   justify-content: space-between;
-
   list-style-type: none;
 }
 
