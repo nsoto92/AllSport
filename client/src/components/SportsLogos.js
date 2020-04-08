@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
-// import "slick-carousel/slick/slick-theme.css"
+import "slick-carousel/slick/slick-theme.css"
 
 export default class MultipleItems extends Component {
   render() {
@@ -9,9 +9,9 @@ export default class MultipleItems extends Component {
       dots: false,
       infinite: true,
       speed: 1000,
-      slidesToShow: 12,
+      slidesToShow: 17,
       slidesToScroll: 12,
-      arrows: true
+      arrows: false,
     }
     return (
       <div className="container-fluid">
