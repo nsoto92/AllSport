@@ -30,7 +30,7 @@ export default (props) => {
           <Nav className="mr-auto">
             <Nav.Link href="/">HOME</Nav.Link>
             <Nav.Link href="/products">SHOP</Nav.Link>
-            <Nav.Link href="/players">FIND A PRO</Nav.Link>
+            <Nav.Link href="/players">LEARN A PRO</Nav.Link>
             <Nav.Link href="/aboutUs">ABOUT US</Nav.Link>
             <Nav.Link href="/contactUs">CONTACT US</Nav.Link>
           </Nav>
