@@ -9,7 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/home.css"
 import "../styles/products.css"
 
-export default props => {
+export default (props) => {
   const { products } = useProducts()
   const { toggle, status, cart } = useItems()
   return (
@@ -20,35 +20,31 @@ export default props => {
         expand="lg"
         bg="white"
         variant="light"
-      >
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mr-auto">
-            <Nav.Link href="/">HOME</Nav.Link>
-            <Nav.Link href="/products">SHOP</Nav.Link>
-            <Nav.Link href="/players">LEARN A PRO</Nav.Link>
-            <Nav.Link href="/aboutUs">ABOUT US</Nav.Link>
-            <Nav.Link href="/contactUs">CONTACT US</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-<<<<<<< HEAD
-=======
+      ></Navbar>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="mr-auto">
+          <Nav.Link href="/">HOME</Nav.Link>
+          <Nav.Link href="/products">SHOP</Nav.Link>
+          <Nav.Link href="/players">LEARN A PRO</Nav.Link>
+          <Nav.Link href="/aboutUs">ABOUT US</Nav.Link>
+          <Nav.Link href="/contactUs">CONTACT US</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
 
->>>>>>> 2f3192905012bb4d27a776a31e8af4872a6a810a
-
-        <div className="navbar-nav">
-          <li className="nav-item  rounded-circle mx-2 basket-icon">
-            <TiShoppingCart
-              id='className={status ? "cartItems" : "cartItems closed"}'
-              onClick={toggle}
-              className={
-                status
-                  ? "nav-item  rounded-circle mx-2 basket-icon closed"
-                  : "nav-item  rounded-circle mx-2 basket-icon"
-              }
-            />
-          </li>
-        </div>
-   
+      <div className="navbar-nav">
+        <li className="nav-item  rounded-circle mx-2 basket-icon">
+          <TiShoppingCart
+            id='className={status ? "cartItems" : "cartItems closed"}'
+            onClick={toggle}
+            className={
+              status
+                ? "nav-item  rounded-circle mx-2 basket-icon closed"
+                : "nav-item  rounded-circle mx-2 basket-icon"
+            }
+          />
+        </li>
+      </div>
+    </div>
   )
 }
