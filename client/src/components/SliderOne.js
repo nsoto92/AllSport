@@ -22,7 +22,7 @@ export default (props) => {
             <Link to="/products">
               <img
                 className="d-block w-100"
-                src="./assets/nike-cleats.png"
+                src="./assets/new-nike.png"
                 alt="Second slide"
               />
             </Link>
