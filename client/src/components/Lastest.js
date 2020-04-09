@@ -1,6 +1,5 @@
 import React from "react"
-
-// import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/home.css"
 
 export default (props) => {

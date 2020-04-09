@@ -1,6 +1,5 @@
 import React from "react"
 import ReactPlayer from "react-player"
-import { Link } from "react-router-dom"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/home.css"
 
@@ -19,20 +18,10 @@ export default (props) => {
           playing
           className="react-player"
           playing
-          width="90%"
-          height="80%"
+          width="95%"
+          height="90%"
         />
       </div>
-
-      <br />
-
-      {/* <div className="container-fluid">
-        <div className="saleButton text-center">
-          <Link className="linkToShop" to="/products">
-            <button className="sale-btn">EXPLORE</button>
-          </Link>
-        </div>
-      </div> */}
     </div>
   )
 }
