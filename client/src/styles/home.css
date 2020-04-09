@@ -29,6 +29,11 @@ header .site-title {
   margin-right: 40px;
 }
 
+.sticky-nav {
+  position: sticky;
+  top: 0;
+}
+
 .navbar-nav .nav-link {
   font-size: 0.9em;
   color: black;
