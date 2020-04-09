@@ -6,15 +6,15 @@
 header {
   background-color: red;
   font-family: roboto;
+  width: 100%;
 }
 
 header .site-title {
   font-family: gugi;
 }
 
-.container .dropdown-toggle,
-.container .dropdown-item {
-  font-size: 0.7em;
+.container {
+  width: 100%;
 }
 
 .header-links a {
@@ -31,6 +31,7 @@ header .site-title {
 
 .navbar-nav {
   margin-right: 40px;
+  width: 100%;
 }
 
 .navbar-nav .nav-link {
