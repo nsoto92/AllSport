@@ -5,7 +5,7 @@ import { useFeatPlayers } from "../hooks"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/home.css"
 
-export default props => {
+export default (props) => {
   const { players } = useFeatPlayers()
   return (
     <div className="container-fluid">
@@ -16,7 +16,7 @@ export default props => {
       </div>
       <div className="site-slider-two px-md-4">
         <div className="row slider-two text-center">
-          {players.map(player => (
+          {players.map((player) => (
             <div className="col-md-2 product pt-md-5 pt-4">
               <img className="homePros" src={player.img} alt="Product 1" />
               <Link className="linkToShop" to="/players">
