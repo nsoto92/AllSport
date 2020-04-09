@@ -6,7 +6,7 @@ import { FaStar } from "react-icons/fa"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/home.css"
 
-export default props => {
+export default (props) => {
   const { products } = useFeatProducts()
   const { add } = useItems()
   return (
@@ -19,7 +19,7 @@ export default props => {
 
       <div className="site-slider-three px-md-4">
         <div className="slider-three row text-center px-4">
-          {products.map(product => (
+          {products.map((product) => (
             <div className="col-md-2 product pt-md-5">
               <Link to="/products">
                 <img
@@ -29,7 +29,7 @@ export default props => {
                 />
               </Link>
               <div className="cart-details">
-                <h6 className="pro-title p-0">{product.title}</h6>
+                <h6 className="pro-title p-0">{product.name}</h6>
                 <div className="rating">
                   <FaStar />
                   <FaStar />
@@ -46,7 +46,7 @@ export default props => {
                 </div>
                 <div className="cart mt-4">
                   <button
-                    onClick={e => add(product)}
+                    onClick={(e) => add(product)}
                     className="border site-btn btn-span"
                   >
                     Add to Cart

@@ -20,6 +20,7 @@ export default (props) => {
       <div>
         <Header />
         <Navbar />
+        <Cart />
         <Route exact path="/" component={Home}></Route>
         <Route path="/products" component={Products}></Route>
         <Route path="/players" component={Players}></Route>
@@ -27,7 +28,6 @@ export default (props) => {
         <Route path="/aboutUs" component={AboutUs}></Route>
         <Route path="/contactUs" component={ContactUs}></Route>
         <Route path="/checkout" component={Checkout}></Route>
-        <Cart />
         <Footer />
       </div>
     </Router>
