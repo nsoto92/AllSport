@@ -11,7 +11,8 @@ export default (props) => {
           <div className="col-md-4 col-sm-12 col-12">
             <div className="btn-group">
               <button
-                className="btn border dropdown-toggle my-md-4 my-2 text-white"
+                id="btn-text"
+                className="btn border-red dropdown-toggle my-md-4 my-2 text-red"
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"

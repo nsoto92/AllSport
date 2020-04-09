@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 import Card from "./Card.js"
 
 import { usePlayers } from "../hooks"
-import styles from "../styles/findPros.css"
+import styles from "../styles/players.css"
 
 export default (props) => {
   const [message, setMessage] = useState("")

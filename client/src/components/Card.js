@@ -1,10 +1,11 @@
 // Coded by Justin Burrows (https://github.com/JustinBurrowsDev)
+
 import React, { useState } from "react"
 import ReactDOM from "react-dom"
 import ReactCardFlip from "react-card-flip"
 import { Link } from "react-router-dom"
 import { usePlayers } from "../hooks"
-import styles from "../styles/findPros.css"
+import styles from "../styles/players.css"
 
 export default (props) => {
   const [isFlipped, setIsFlipped] = useState(false)
@@ -20,8 +21,12 @@ export default (props) => {
             <p>{props.player.firstname + " " + props.player.lastname}</p>
           </Link>
         </div>
-        <div>
-          <img className="findPros" src={props.player.img} alt="playercard" />
+        <div className="actionImgContainer">
+          <img
+            className="actionimg"
+            src={props.player.actionimg}
+            alt="playercard"
+          />
         </div>
 
         <button className="flipbutton" onClick={handleClick}>
@@ -31,9 +36,11 @@ export default (props) => {
 
       <div className="playerList">
         <div className="playerSport">
+          <div>
+            <img className="findPros" src={props.player.img} alt="playercard" />
+          </div>
           <p>{" Sport: " + props.player.sport}</p>
-        </div>
-        <div className="playerSport">
+
           <p>{" Team: " + props.player.team}</p>
         </div>
 

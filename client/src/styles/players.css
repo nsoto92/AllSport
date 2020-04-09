@@ -24,8 +24,7 @@
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  margin-top: 20px;
-  margin: 10px;
+  padding: 5px;
 }
 
 .title {
@@ -43,34 +42,44 @@
   margin: auto;
   margin-bottom: 10px;
   text-align: center;
-  background-image: url("https://user-images.githubusercontent.com/58059462/78826972-384fd500-7997-11ea-9582-8cb916a7f1c8.jpg");
-
+  background-image: url("https://user-images.githubusercontent.com/58059462/78874727-ac26c780-7a01-11ea-94c8-533f37ebeca4.jpg");
+  background-position: center top;
   box-shadow: 10px 10px 53px 1px rgba(0, 0, 0, 0.71);
 }
 
 .playerDescriptionContainer {
-  padding: 20px;
+  padding: 10px;
+  background-color: #890002;
+  width: 80%;
+  margin: auto;
+  border-radius: 20px;
+}
+.playerDescription {
+  background-color: black;
+  font-size: 0.1em;
 }
 
 .playerName {
-  font-size: 2em;
-  padding: 30px;
+  font-size: 1.5em;
+  padding-top: 10px;
+  color: black;
 }
 
 .playerSport {
-  padding-top: 25px;
   margin-left: 10px;
   margin: auto;
   font-size: 1.5em;
+  color: black;
 }
 
 .playerList p {
-  color: white;
-  font-family: Lato;
+  font-family: Gugi;
   margin: auto;
   text-align: center;
   opacity: 0.9;
   border-radius: 10px;
+
+  color: white;
 }
 
 .flipbutton {
@@ -79,8 +88,28 @@
   border-radius: 10px;
   background-color: black;
   color: white;
+
+  margin-bottom: 17px;
 }
 
 .flipbutton:focus {
   outline: none;
+}
+
+.actionimg {
+  width: 250px;
+  border: 10px solid #890002;
+  border-radius: 10px;
+}
+
+.actionImgContainer {
+  padding-bottom: 0px;
+}
+
+.playerSport {
+  background-color: black;
+  border: 10px solid #890002;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 0.9em;
 }

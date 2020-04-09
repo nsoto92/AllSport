@@ -4,17 +4,17 @@
 /* header */
 
 header {
-  background-color: rgb(226, 17, 17);
+  background-color: red;
   font-family: roboto;
+  width: 100%;
 }
 
 header .site-title {
   font-family: gugi;
 }
 
-.container .dropdown-toggle,
-.container .dropdown-item {
-  font-size: 0.7em;
+.container {
+  width: 100%;
 }
 
 .header-links a {
@@ -23,25 +23,24 @@ header .site-title {
   color: white;
 }
 
+#btn-text {
+  color: red;
+}
+
 /*  Navigation Menu **/
 
 .navbar-nav {
   margin-right: 40px;
+  width: 100%;
 }
 
 .navbar-nav .nav-link {
   font-size: 0.9em;
-  color: lightgray;
+  color: black;
 }
 
 .navbar-nav .nav-item .nav-link {
   padding: 0 1.3em;
-}
-
-.navbar-nav .basket-icon {
-  color: black;
-  position: fixed;
-  top: 108px;
 }
 
 /* Slider one */
@@ -77,7 +76,7 @@ header .site-title {
   padding: 0.8rem 1.9rem;
   border-radius: 4rem;
   border: 1px solid border;
-  background-color: rgb(226, 17, 17);
+  background-color: red;
   color: white;
   list-style-type: none;
 }
@@ -106,7 +105,7 @@ header .site-title {
 .player-wrapper {
   position: relative;
   padding-top: 56.25%; /* 720 / 1280 = 0.5625 */
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 .react-player {
@@ -114,16 +113,8 @@ header .site-title {
   top: 0;
 }
 
-.sale-btn {
-  position: absolute;
-  color: white;
-  background-color: rgb(226, 17, 17);
-  padding: 0.8rem 1.9rem;
-  border-radius: 4rem;
-  border: 1px solid border;
-  margin-top: -215px;
-  margin-bottom: 87px;
-  margin-left: -46px;
+.saleHeader {
+  padding-top: 100px;
 }
 
 /* Latest and Greatest */
@@ -133,8 +124,8 @@ header .site-title {
 }
 
 .nikeZoom {
-  width: 80%;
-  margin-left: 10%;
+  width: 90%;
+  margin-left: 5%;
 }
 
 /* sports logo */
@@ -160,7 +151,7 @@ footer {
   color: white;
   font-size: 20px;
   font-family: gugi;
-  background-color: rgb(226, 17, 17);
+  background-color: red;
   text-decoration: none;
 }
 .list {

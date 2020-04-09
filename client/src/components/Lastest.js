@@ -1,6 +1,5 @@
 import React from "react"
-
-// import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/home.css"
 
 export default (props) => {
@@ -13,12 +12,11 @@ export default (props) => {
       </div>
       <div>
         <img
-          src="./assets/nikeZoom.png"
+          src="./assets/nike.png"
           className="img-fluid nikeZoom"
           alt="Banner 1"
         />
       </div>
-      //{" "}
     </div>
   )
 }
