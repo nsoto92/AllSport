@@ -5,5 +5,7 @@
     "password": "password",
     "database": "AllSport",
     "port": 3307
-  }
+  },
+
+  "secret": "DxR-BRgnP6Jub4sZc+5b_rWv6%HB8PQvMC-c7U=Q3WpJu&y2cm"
 }
