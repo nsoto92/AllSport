@@ -15,7 +15,7 @@ export default (props) => {
   return (
     <div className="container-fluid p-0">
       <Navbar
-        className="navbar fixed-top "
+        className="navbar"
         collapseOnSelect
         expand="lg"
         bg="white"

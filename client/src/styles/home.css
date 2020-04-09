@@ -23,15 +23,14 @@ header .site-title {
   color: white;
 }
 
+#btn-text {
+  color: red;
+}
+
 /*  Navigation Menu **/
 
 .navbar-nav {
   margin-right: 40px;
-}
-
-.sticky-nav {
-  position: sticky;
-  top: 0;
 }
 
 .navbar-nav .nav-link {
