@@ -15,14 +15,15 @@ export default (props) => {
   return (
     <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
       <div className="playerList">
-        <div>
-          <img className="findPros" src={props.player.img} alt="playercard" />
-        </div>
         <div className="playerName">
           <Link to={"/playerprofiles"}>
             <p>{props.player.firstname + " " + props.player.lastname}</p>
           </Link>
         </div>
+        <div>
+          <img className="findPros" src={props.player.img} alt="playercard" />
+        </div>
+
         <button className="flipbutton" onClick={handleClick}>
           FLIP ME
         </button>

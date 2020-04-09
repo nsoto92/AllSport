@@ -34,8 +34,7 @@ export default function(e) {
               <img className="prodImgCart" src={product.image} />
               <div className="prodDetails">
                 {product.title}
-                <br />
-                {product.price}
+                <br />${product.price}
                 <br />
                 <p>
                   <button
