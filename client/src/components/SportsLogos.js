@@ -3,15 +3,17 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
-export default class MultipleItems extends Component {
+export default class AutoPlay extends Component {
   render() {
     const settings = {
       dots: false,
       infinite: true,
-      speed: 1000,
-      slidesToShow: 17,
-      slidesToScroll: 12,
-      arrows: false,
+      slidesToShow: 8,
+      slidesToScroll: 1,
+      autoplay: false,
+      speed: 500,
+      autoplaySpeed: 3000,
+      cssEase: "linear",
     }
     return (
       <div className="container-fluid">
@@ -19,8 +21,7 @@ export default class MultipleItems extends Component {
           <div className="features">
             <h1>Explore Pro Sports</h1>
           </div>
-        </div>
-        <div>
+
           <Slider {...settings}>
             <div>
               <img src="./assets/nhl.png" alt="Brand 1" className="img-fluid" />

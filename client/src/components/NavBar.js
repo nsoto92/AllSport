@@ -33,6 +33,7 @@ export default (props) => {
         </Navbar.Collapse>
         <div>
           <TiShoppingCart
+            size={32}
             className="nav-item  mx-2 basket-icon"
             id='className={status ? "cartItems" : "cartItems closed"}'
             onClick={toggle}

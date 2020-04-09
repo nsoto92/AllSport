@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import Dropdown from "react-bootstrap/Dropdown"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/home.css"
 
@@ -9,38 +10,40 @@ export default (props) => {
       <div className="container">
         <div className="row">
           <div className="col-md-4 col-sm-12 col-12">
-            <div className="btn-group">
-              <button
+            <Dropdown className="btn-group">
+              <Dropdown.Toggle
                 className="btn border dropdown-toggle my-md-4 my-2 text-white"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
+                variant="red"
+                // id="dropdown-basic"
               >
-                Placeholder
-              </button>
-              <div className="dropdown-menu">
-                <a href="#" className="dropdown-item">
-                  Placeholder
-                </a>
-              </div>
-            </div>
+                Pros
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+                <Dropdown.Item href="/playerProfiles">
+                  Pro Sign In
+                </Dropdown.Item>
+                <Dropdown.Item href="/playerProfiles">
+                  Pro Sign up
+                </Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
           </div>
-          <div className="col-md-4 col-12 text-center">
-            <Link className="nav-link" to="/">
-              <h2 className="my-md-3 site-title text-white">All Sports</h2>
-            </Link>
-          </div>
+        </div>
+        <div className="col-md-4 col-12 text-center">
+          <Link className="nav-link" to="/">
+            <h2 className="my-md-3 site-title text-white">All Sports</h2>
+          </Link>
+        </div>
 
-          <div className="col-md-4 col-12 text-right">
-            <p className="my-md-4 header-links">
-              <a href="#" className="px-2">
-                Join Us
-              </a>
-              <a href="#" className="px-1">
-                Log In{" "}
-              </a>
-            </p>
-          </div>
+        <div className="col-md-4 col-12 text-right">
+          <p className="my-md-4 header-links">
+            <Link to="#" className="px-2">
+              Join Us
+            </Link>
+            <Link to="#" className="px-1">
+              Log In{" "}
+            </Link>
+          </p>
         </div>
       </div>
     </header>

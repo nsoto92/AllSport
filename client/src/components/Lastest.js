@@ -13,12 +13,11 @@ export default (props) => {
       </div>
       <div>
         <img
-          src="./assets/nikeZoom.png"
+          src="./assets/nike.png"
           className="img-fluid nikeZoom"
           alt="Banner 1"
         />
       </div>
-      //{" "}
     </div>
   )
 }
