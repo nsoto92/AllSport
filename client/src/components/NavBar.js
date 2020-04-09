@@ -20,21 +20,20 @@ export default (props) => {
         expand="lg"
         bg="white"
         variant="light"
-      ></Navbar>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="mr-auto">
-          <Nav.Link href="/">HOME</Nav.Link>
-          <Nav.Link href="/products">SHOP</Nav.Link>
-          <Nav.Link href="/players">LEARN A PRO</Nav.Link>
-          <Nav.Link href="/aboutUs">ABOUT US</Nav.Link>
-          <Nav.Link href="/contactUs">CONTACT US</Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-
-      <div className="navbar-nav">
-        <li className="nav-item  rounded-circle mx-2 basket-icon">
+      >
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link href="/">HOME</Nav.Link>
+            <Nav.Link href="/products">SHOP</Nav.Link>
+            <Nav.Link href="/players">LEARN A PRO</Nav.Link>
+            <Nav.Link href="/aboutUs">ABOUT US</Nav.Link>
+            <Nav.Link href="/contactUs">CONTACT US</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+        <div>
           <TiShoppingCart
+            className="nav-item  mx-2 basket-icon"
             id='className={status ? "cartItems" : "cartItems closed"}'
             onClick={toggle}
             className={
@@ -43,8 +42,8 @@ export default (props) => {
                 : "nav-item  rounded-circle mx-2 basket-icon"
             }
           />
-        </li>
-      </div>
+        </div>
+      </Navbar>
     </div>
   )
 }
