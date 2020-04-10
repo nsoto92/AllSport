@@ -7,7 +7,7 @@ const router = express.Router()
 const connection = require("../db")
 
 router.get("/featplayers", (req, res, next) => {
-  const sql = `SELECT * FROM AllSport.players
+  const sql = `SELECT * FROM AllSport.trendingpros
   ORDER BY RAND()
   LIMIT 6`
 

@@ -8,6 +8,7 @@ router.get("/featproducts", (req, res, next) => {
   const sql = `SELECT * FROM AllSport.featuredproducts
   ORDER BY RAND()`
 
+
   connection.query(sql, (err, results, fields) => {
     if (err) {
       console.log(err)
