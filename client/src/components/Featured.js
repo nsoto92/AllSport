@@ -44,17 +44,10 @@ export default (props) => {
                     </small>
                   </h5>
                 </div>
+
               </div>
             </div>
           ))}
-        </div>
-        <div className="slider-btn">
-          <span className="prev position-top">
-            <i className="fas fa-chevron-left fa-2x text-secondary"></i>
-          </span>
-          <span className="next position-top right-0">
-            <i className="fas fa-chevron-right fa-2x text-secondary"></i>
-          </span>
         </div>
       </div>
     </div>

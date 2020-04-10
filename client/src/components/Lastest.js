@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/home.css"
 
@@ -11,11 +12,13 @@ export default (props) => {
         </div>
       </div>
       <div>
-        <img
-          src="./assets/nike.png"
-          className="img-fluid nikeZoom"
-          alt="Banner 1"
-        />
+        <Link to="/products">
+          <img
+            src="./assets/nike.png"
+            className="img-fluid nikeZoom"
+            alt="Banner 1"
+          />
+        </Link>
       </div>
     </div>
   )

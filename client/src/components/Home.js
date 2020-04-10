@@ -6,6 +6,7 @@ import SaleVideo from "./SaleVideo"
 import Lastest from "./Lastest"
 import SportsLogos from "./SportsLogos"
 import "../styles/home.css"
+
 import "bootstrap/dist/css/bootstrap.min.css"
 
 export default (props) => {
