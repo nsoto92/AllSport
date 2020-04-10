@@ -4,7 +4,6 @@ import { useProducts } from "../hooks"
 import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
 import { TiShoppingCart } from "react-icons/ti"
-
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/home.css"
 import "../styles/products.css"
