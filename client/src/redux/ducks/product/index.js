@@ -8,6 +8,7 @@ import { useEffect } from "react"
 
 // 2. action definitions
 const GET = "products/GET"
+const POST = "products/POST"
 
 // 3. initial state
 const initialState = { products: [] }
@@ -16,8 +17,9 @@ const initialState = { products: [] }
 export default (state = initialState, action) => {
   switch (action.type) {
     case GET:
-      //payload is what is bundled in your actions
       return { ...state, products: action.payload }
+    case POST:
+      return { ...state, products: [...state.products, action.payload] }
     default:
       return state
   }
@@ -33,9 +35,23 @@ export function getProducts() {
   }
 }
 
+//Adds product to database
+function createProduct(title, price, image) {
+  return (dispatch) => {
+    axios.post("/api/products", title, price, image).then((resp) => {
+      dispatch({
+        type: POST,
+        payload: resp.data,
+      })
+    })
+  }
+}
+
 // 6. custom hook
 export function useProducts() {
   const dispatch = useDispatch()
+  const create = (title, price, image) =>
+    dispatch(createProduct(title, price, image))
   const products = useSelector((appState) => appState.productState.products)
   const get = () => dispatch(getProducts())
 
@@ -43,5 +59,5 @@ export function useProducts() {
     get()
   }, [])
 
-  return { products, get }
+  return { products, get, create }
 }
