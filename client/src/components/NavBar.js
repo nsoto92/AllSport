@@ -32,6 +32,7 @@ export default (props) => {
           </Nav>
         </Navbar.Collapse>
         <div>
+          <p className="cartQty">{cart.length}</p>
           <TiShoppingCart
             size={32}
             className="nav-item  mx-2 basket-icon"

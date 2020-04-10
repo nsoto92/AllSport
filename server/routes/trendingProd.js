@@ -6,8 +6,8 @@ const connection = require("../db")
 
 router.get("/featproducts", (req, res, next) => {
   const sql = `SELECT * FROM AllSport.featuredproducts
-  ORDER BY RAND()
-  LIMIT 6`
+  ORDER BY RAND()`
+
 
   connection.query(sql, (err, results, fields) => {
     if (err) {
