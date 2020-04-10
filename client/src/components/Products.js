@@ -4,8 +4,7 @@
 import React from "react"
 import { useProducts } from "../hooks"
 import { useItems } from "../hooks"
-
-import { FaShoppingCart } from "react-icons/fa"
+import { Link } from "react-router-dom"
 
 import "../styles/products.css"
 
@@ -25,15 +24,25 @@ export default (props) => {
           <div className="prodList">
             {products.map((product) => (
               <div className="prod" key={product.id}>
-                <img className="prodImg" src={product.image} />
-                {product.title}
-                <br />${product.price}
-                <br />
-                <button onClick={(e) => add(product)} className="prodCart">
+                <div clasName="imgA">
+                  <img className="prodImg" src={product.image} />
+                </div>
+                <div className="prodDesc">
+                  {product.title}
+                  <br />${product.price}
+                </div>
+                <button onClick={(e) => add(product)} className="prodCart1">
                   Add to cart
                 </button>
               </div>
             ))}
+          </div>
+          <div>
+            {/* <Link to="/createProduct">
+              <button type="submit" className="postLink">
+                Post my product!
+              </button>
+            </Link> */}
           </div>
         </div>
       </div>

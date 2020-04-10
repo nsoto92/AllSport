@@ -9,6 +9,7 @@ import PlayerProfiles from "./PlayerProfiles"
 import AboutUs from "./AboutUs"
 import ContactUs from "./ContactUs"
 import Cart from "./Cart"
+import CreateProduct from "./CreateProduct"
 import Footer from "./Footer"
 import Checkout from "./Checkout"
 import "../styles/home.css"
@@ -28,6 +29,7 @@ export default (props) => {
         <Route path="/aboutUs" component={AboutUs}></Route>
         <Route path="/contactUs" component={ContactUs}></Route>
         <Route path="/checkout" component={Checkout}></Route>
+        <Route path="/createProduct" component={CreateProduct}></Route>
         <Footer />
       </div>
     </Router>

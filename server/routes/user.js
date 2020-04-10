@@ -50,7 +50,10 @@ router.post("/login"),
         const userpass = saltresults[0].password
 
         if (sha512(password + salt) === userpass) {
-          const token = jwt.sign()
+          const token = jwt.sign(
+            { username: username, project: AllSport },
+            config.get("secret")
+          )
 
           res.json({
             token: token,
